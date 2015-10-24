@@ -3,7 +3,8 @@ queue()
     .defer(d3.json, "/static/geojson/us-states.json")
     .await(makeGraphs);
 
-        //.defer(d3.json, "/donorschoose/projects")
+    // Used for Mongo DB
+    //.defer(d3.json, "/donorschoose/projects")
 
 function makeGraphs(error, projectsJson, statesJson) {
 	
